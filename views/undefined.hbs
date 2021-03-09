@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>404 Page</title>
+	<link type="text/css" rel="stylesheet" href="/css/maincss.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+	  <a href="./">Home</a>
+	  <a href="labs">Labs</a>
+	  <a href="undefined" class="active">404 Page</a>
+	  <a href="4">Facts About 4</a>
+	</div>
+	<h1>404 Error: PAGE NOT FOUND</h1>
+
+	<div>
+		<p>A valid number was not inputted! Cringe!</p>
+		<button onclick="pageRedirect()">Take me back to the home page!</button>
+	</div>
+	<script>
+		function pageRedirect() {
+    	    window.location.replace("/");
+    	}
+	</script>
+
+</body>
+</html>

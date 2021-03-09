@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Labs Page</title>
+	<link type="text/css" rel="stylesheet" href="/css/maincss.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="topnav" id="myTopnav">
+	  <a href="./">Home</a>
+	  <a href="labs" class="active">Labs</a>
+	  <a href="undefined">404 Page</a>
+	  <a href="4">Facts About 4</a>
+	</div>
+	<h1>Labs Page</h1>
+
+	<div>
+		<p>Here you can access buttons to test the labs!</p>
+		<button onclick="redirectNumberLab()">Get Facts About 4</button>
+		<button onclick="redirectNumberLabJson()">Get Facts About 6 in json format</button>
+		<button onclick="redirectNumberLabTwo()">Get 2 Facts About 7</button>
+		<button onclick="redirectNumberLabThreeJson()">Get 2 Facts About 3 that are in json format</button>
+		<button onclick="pageRedirect()">Home Page</button>
+	</div>
+	<script>
+		function pageRedirect() {
+    	    window.location.replace("/");
+    	}
+
+		function redirectNumberLab() {
+    	    window.location.replace("/4");
+    	}
+
+		function redirectNumberLabJson() {
+    	    window.location.replace("/6?format=json");
+    	}
+
+		function redirectNumberLabTwo() {
+    	    window.location.replace("/7?num_facts=2");
+    	}
+
+		function redirectNumberLabThreeJson() {
+    	    window.location.replace("/3?num_facts=2&format=json");
+    	}
+	</script>
+
+</body>
+</html>
